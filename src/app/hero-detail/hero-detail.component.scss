@@ -1,0 +1,23 @@
+@import '../variables';
+
+.hero-detail-wrapper {
+  background-color: $selection;
+  font-size: 1.5em;
+
+  h2 {
+    text-align: center;
+  }
+
+  .input-area {
+    label {
+      width: 100%;
+      margin-right: 100%;
+    }
+  
+    input {
+      height: 20%;
+      width: 80%;
+      margin-left: 10%;
+    }
+  }
+}

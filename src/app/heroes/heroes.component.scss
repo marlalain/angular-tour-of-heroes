@@ -1,6 +1,36 @@
+@import '../variables';
+
 ul.heroes {
   list-style-type: none;
   list-style-position: inside;
   padding-left: 0;
   -webkit-padding-start: 0;
+}
+
+.heroes-wrapper {
+  background-color: $selection;
+  font-size: 2em;
+  
+  .heroes li {
+    border-top: 3px solid $background;
+    border-bottom: 3px solid $background;
+    margin-bottom: 1%;
+    background-color: $current_line;
+    display: flex;
+  }
+  
+  .heroes li.selected {
+    background-color: $comment;
+  }
+  
+  .heroes span.badge {
+    display: inline-block;
+    background-color: $background;
+    justify-content: left;
+  }
+
+  .heroes span.name {
+    justify-content: center;
+    margin-left: 3%;
+  }
 }

@@ -14,16 +14,18 @@ ul.heroes {
   h2 {
     text-align: center;
   }
-  
+
   .heroes li {
     border-top: 3px solid $background;
-    border-bottom: 3px solid $background;
-    margin-bottom: 1%;
-    background-color: $current_line;
-    display: flex;
   }
   
-  .heroes li.selected {
+  .heroes li * {
+    display: flex;
+    text-decoration: none;
+    color: $foreground;
+  }
+  
+  .heroes li.selected, .heroes li:hover, .heroes li a:hover {
     background-color: $comment;
   }
   

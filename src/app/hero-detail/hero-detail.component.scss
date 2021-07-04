@@ -20,4 +20,23 @@
       margin-left: 10%;
     }
   }
+
+  .button-area {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    padding-bottom: 5%;
+    button {
+      color: $foreground;
+      text-decoration: none;
+      background-color: $comment;
+      padding: 1.5%;
+      border-radius: 5%;
+      border: 2px solid $current_line;
+      margin-right: 1%;
+      padding-left: 3%;
+      padding-right: 3%;
+      cursor: pointer;
+    }
+  }
 }

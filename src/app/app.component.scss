@@ -1,6 +1,7 @@
 @import 'variables';
 
-h1 {
+.app-wrapper h1 {
+    text-align: center;
     color: $foreground;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 250%;
@@ -21,4 +22,21 @@ body, input[type="text"], button {
 
 * {
     font-family: Arial, Arial, Helvetica, sans-serif;
+}
+
+.app-wrapper nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    a {
+        color: $foreground;
+        text-decoration: none;
+        background-color: $comment;
+        padding: 1.5%;
+        border-radius: 5%;
+        border: 2px solid $current_line;
+        margin-right: 1%;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
 }
